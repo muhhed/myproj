@@ -1,0 +1,40 @@
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 120%;
+}
+header {
+    background-color:rgb(30, 144, 255);
+}
+header nav {
+    background-color: rgb(255, 215, 0);
+}
+
+main {
+    background-color: rgb(218, 165, 32);
+    font-size: 1.4rem;
+}
+footer {
+    background-color: rgb(245, 245, 220);
+}
+
+header nav ul li {
+    display:inline;
+    width: 1.2rem;
+    margin: 0 0.5rem ;
+
+
+}
+
+h1 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(34, 41, 2);
+
+}
+p {
+    line-height: 32px;
+}
+main p a {
+    color: rgb(0, 23, 53);
+}
