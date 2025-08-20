@@ -1,40 +1,155 @@
-
 body {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 120%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 125%;
+    background-color: rgb(254, 254, 252);
+    margin: 0;
+    padding: 0;
+    
 }
 header {
     background-color:rgb(30, 144, 255);
+    background-repeat: no-repeat;
+    overflow: auto;
+    padding: 1rem 0;
+    text-align: center;
 }
 header nav {
     background-color: rgb(255, 215, 0);
-}
+    display: inline-block;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0px;
+    border-radius: 5px;
 
+}
+header img{
+    border: 8px solid rgb(255, 215, 0);
+    border-radius: 15% 5% 5% 15%;
+    padding: 3px;
+    margin-top: 10px;
+}
+.container p{
+    font-size: 1.4rem;
+
+}
+nav img {
+    width: 10%;
+    position: relative;
+    top: 20px;
+}
 main {
-    background-color: rgb(218, 165, 32);
+    background-color: rgb(218, 165, 32); 
+    padding: 2rem;
     font-size: 1.4rem;
 }
-footer {
-    background-color: rgb(245, 245, 220);
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-between;
+}
+.grid .cars {
+  width: 100%;
+  height: auto;
+}
+.grid img {
+  width: 100%;
+  height: auto;
+  border: 8px dotted rgb(0, 0, 0);
+  border-radius: 15% 5% 15% 5%;
+  padding: 3px;
+  margin-top: 10px;
+}
+
+.fx {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-evenly; 
+}
+.fx img:nth-child(2n-1){
+    border: 8px dotted rgb(0, 0, 0);
+    border-radius: 5% 15% 5% 15%;
+    padding: 3px;
+    margin-top: 10px;
+}
+
+.fx img:nth-child(even){
+    border: 8px dashed rgb(0, 0, 0);
+    border-radius: 15% 5% 15% 5%;
+    padding: 3px;
+    margin-top: 10px;
+}
+
+
+header nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 header nav ul li {
-    display:inline;
-    width: 1.2rem;
-    margin: 0 0.5rem ;
+    display: inline;
+    margin: 0 1rem;
+}
 
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background-color: rgb(255, 215, 0);
+    position: relative;
+    transition: bottom 0.5s color 0.5s ease;
+}
 
+header nav ul li a:hover, a:focus {
+    position: relative;
+    color: rgb(255, 4, 4); 
+    bottom: 3px;
 }
 
 h1 {
-    text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: rgb(34, 41, 2);
+    color: rgb(255, 250, 240);
+    margin: 1.2rem;
+}
 
+h3 {
+    text-align: center;
 }
+
 p {
-    line-height: 32px;
+    line-height: 1.8;
 }
-main p a {
-    color: rgb(0, 23, 53);
+
+
+
+footer {
+    background-color: rgb(233, 233, 200);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.skip-link{
+    position: absolute;
+    left: -300px;
+    background: rgb(250 250 241 / 50%);
+    color: rgb(3 0 0);
+    padding: 7px;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.skip-link:focus,
+.skip-link:hover {
+    outline: 2px solid rgba(255, 0, 0, 0.7);
+    left: 300px;
 }
