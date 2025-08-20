@@ -126,9 +126,6 @@ p {
     line-height: 1.8;
 }
 
-main p a {
-    text-decoration: none;
-}
 
 main p a:hover,
 main p a:focus {
